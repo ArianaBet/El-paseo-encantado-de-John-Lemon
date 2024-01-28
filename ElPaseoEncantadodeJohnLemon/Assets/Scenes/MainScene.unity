@@ -4052,6 +4052,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 782d8626169696f42974979faf08d4b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeDuration: 1
+  player: {fileID: 1673705214}
+  exitBackgroundImageCanva: {fileID: 289031034}
+  displayImageDuration: 1
 --- !u!65 &1437537438
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4088,6 +4092,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1673705214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8600719516775452733, guid: a5e9190ab76fbdd4b92300d43d50c6b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 258185923602186396}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2071939464
 GameObject:
   m_ObjectHideFlags: 0
