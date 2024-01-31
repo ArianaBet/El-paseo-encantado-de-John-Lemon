@@ -55,6 +55,7 @@ public class GameEnding : MonoBehaviour
             }
             else
             {
+                
                 Application.Quit();
             }
         }
