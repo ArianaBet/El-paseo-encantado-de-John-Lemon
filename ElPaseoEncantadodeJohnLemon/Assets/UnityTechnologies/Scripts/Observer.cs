@@ -24,12 +24,7 @@ public class Observer : MonoBehaviour
     public GameObject Exclamation;
     public GameObject Point;
 
-    private void Start()
-    {
-        // enemielook = GetComponent<AudioSource>();
-        
-
-    }
+   
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform == player)
