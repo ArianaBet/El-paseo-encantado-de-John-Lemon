@@ -19,6 +19,8 @@ public class GameEnding : MonoBehaviour
     float m_Timer;
     bool m_HasAudioPlayed;
 
+
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == player)
@@ -44,10 +46,14 @@ public class GameEnding : MonoBehaviour
             EndLevel(caughtBackgroundImageCanvasGroup, true, caughtAudio);
            
         }
+
+        
     }
 
     void EndLevel(CanvasGroup imageCanvasGroup, bool doRestart, AudioSource audioSource)
     {
+        
+        
         if (!m_HasAudioPlayed) //ejecutará solo si el audio no se ha reproducido.
         {
             audioSource.Play();
@@ -69,5 +75,5 @@ public class GameEnding : MonoBehaviour
             }
         }
     }
-
+    
 }
