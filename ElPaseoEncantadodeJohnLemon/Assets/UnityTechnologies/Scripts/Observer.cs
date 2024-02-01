@@ -19,7 +19,7 @@ public class Observer : MonoBehaviour
     bool m_AppearExclamation;
 
     //tiempo para los dos segundos
-    public float time = 2;
+   float timeToRun = 2;
 
     public GameObject Exclamation;
     public GameObject Point;
@@ -65,12 +65,12 @@ public class Observer : MonoBehaviour
 
                     m_AppearExclamation = true;
                     m_EnemieIslooking = true;
-                    m_AudioHasPlayed =false;
+                  
 
-                    time -= Time.deltaTime;
+                    timeToRun -= Time.deltaTime;
 
 
-                    if (time <= 0)
+                    if (timeToRun <= 0)
                     {
                         gameEnding.CaughtPlayer();
                     }
@@ -80,9 +80,10 @@ public class Observer : MonoBehaviour
         }
           if (m_IsPlayerInRange == false)
             {
-            time = 2;
+            timeToRun = 2;
             m_AppearExclamation = false;
-            }
+            m_AudioHasPlayed = false;
+        }
 
         
          if (m_EnemieIslooking == true)
@@ -90,6 +91,7 @@ public class Observer : MonoBehaviour
             if (!m_AudioHasPlayed) 
             {
                 enemielook.Play();
+                
                 m_AudioHasPlayed = true;
             }
           

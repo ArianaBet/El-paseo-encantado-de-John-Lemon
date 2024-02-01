@@ -280,10 +280,16 @@ PrefabInstance:
       objectReference: {fileID: 4213617908648772630}
     - target: {fileID: 8749503604242533186, guid: 0394a63086823944483dc6be22808830,
         type: 3}
+      propertyPath: enemielook
+      value: 
+      objectReference: {fileID: 7670567268571823770}
+    - target: {fileID: 8749503604242533186, guid: 0394a63086823944483dc6be22808830,
+        type: 3}
       propertyPath: Exclamation
       value: 
       objectReference: {fileID: 5320957638236252314}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2259892788619919188, guid: 0394a63086823944483dc6be22808830, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -291,6 +297,12 @@ PrefabInstance:
 --- !u!4 &7267443759801988801 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2720200266462960443, guid: 0394a63086823944483dc6be22808830,
+    type: 3}
+  m_PrefabInstance: {fileID: 4691398561539223034}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &7670567268571823770 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3127862542041666400, guid: 0394a63086823944483dc6be22808830,
     type: 3}
   m_PrefabInstance: {fileID: 4691398561539223034}
   m_PrefabAsset: {fileID: 0}
